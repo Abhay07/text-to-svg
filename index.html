@@ -12,7 +12,11 @@
 <script>
 let writingAnimation = WritingAnimation.default;
 document.addEventListener("DOMContentLoaded", function() {
-  writingAnimation.load('/Felipa-Regular.otf', function(err,WritingAnimation){
+  writingAnimation.load('https://abhay07.github.io/text-to-svg/Felipa-Regular.otf', function(err,WritingAnimation){
+  	if(err){
+  		console.log("Font couldn't be loaded");
+  		return;
+  	}
 	WritingAnimation.animateText('Abhay Srivastav','test');
   })
 });
