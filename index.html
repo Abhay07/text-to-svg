@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div id="test">
+		
+	</div>
+<script type="text/javascript" src="main.js"></script></body>
+<script>
+let writingAnimation = WritingAnimation.default;
+document.addEventListener("DOMContentLoaded", function() {
+  writingAnimation.load('/Felipa-Regular.otf', function(err,WritingAnimation){
+	WritingAnimation.animateText('Abhay Srivastav','test');
+  })
+});
+</script>
+</html>
