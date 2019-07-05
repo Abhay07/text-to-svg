@@ -1,22 +1,13 @@
 {
-  "name": "text-to-svg",
-  "version": "3.1.3",
+  "name": "svg-calligraphy",
+  "version": "3.2.0",
   "description": "Convert text to SVG path without native dependence.",
-  "main": "index.js",
   "license": "MIT",
+  "main":"./src/index.js",
   "files": [
-    ".gitignore",
-    "CHANGELOG.md",
-    "README.md",
-    "package.json",
-    "node_modules",
-    "gulpfile.js",
-    "index.js",
-    "build",
     "src",
-    "test",
-    "fonts",
-    "bin"
+    "package.json",
+    "dist"
   ],
   "bin": {
     "text-to-svg": "bin/text-to-svg"
@@ -30,7 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/shrhdk/text-to-svg"
+    "url": "https://github.com/Abhay07/text-to-svg"
   },
   "keywords": [
     "fonts",
@@ -40,17 +31,13 @@
     "text",
     "vector"
   ],
-  "author": "Hideki Shiro",
+  "author": "Abhay Srivastav",
   "bugs": {
-    "url": "https://github.com/shrhdk/text-to-svg/issues"
+    "url": "https://github.com/Abhay07/text-to-svg/issues"
   },
-  "homepage": "https://github.com/shrhdk/text-to-svg",
+  "homepage": "https://github.com/Abhay07/text-to-svg",
   "dependencies": {
-    "babel-core": "^7.0.0-bridge.0",
-    "commander": "^2.11.0",
-    "html-webpack-plugin": "^3.2.0",
-    "opentype.js": "0.7.3",
-    "webpack": "^4.29.1"
+    "opentype.js": "^1.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.1.6",
@@ -58,6 +45,9 @@
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.4",
     "babel-preset-es2015": "^7.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "opentype.js": "^1.1.0",
+    "webpack": "^4.35.2",
     "webpack-cli": "^3.2.3"
   },
   "babel": {
